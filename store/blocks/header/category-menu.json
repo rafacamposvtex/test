@@ -6,7 +6,8 @@
     "children": [
       "menu-item#category-apparel",
       "menu-item#category-home",
-      "menu-item#more"
+      "menu-item#more",
+      "menu-item#special-edition"
     ]
   },
   "menu-item#category-apparel": {
@@ -20,7 +21,7 @@
         "href": "/apparel---accessories/",
         "noFollow": false,
         "tagTitle": "Apparel & Accessories",
-        "text": "Apparel & Accessories"
+        "text": "GRANDES ELETRODOMÉSTICOS"
       }
     },
     "blocks": [
@@ -56,7 +57,7 @@
         "href": "/apparel---accessories/clothing/",
         "noFollow": false,
         "tagTitle": "Clothing",
-        "text": "Clothing"
+        "text": "PEQUENOS ELETRODOMÉSTICOS"
       }
     }
   },
@@ -71,7 +72,7 @@
         "href": "/apparel---accessories/accessories/",
         "noFollow": false,
         "tagTitle": "Accessories",
-        "text": "Accessories"
+        "text": "EDIÇÕES ESPECIAIS"
       }
     }
   },
@@ -101,7 +102,22 @@
         "href": "/home---decor/",
         "noFollow": false,
         "tagTitle": "Home & Decor",
-        "text": "Home & Decor"
+        "text": "PEQUENOS ELETRODOMÉSTICOS"
+      }
+    }
+  },
+  "menu-item#special-edition": {
+    "props": {
+      "id": "menu-item-special-edition",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/home---decor/",
+        "noFollow": false,
+        "tagTitle": "Home & Decor",
+        "text": "EDIÇÕES ESPECIAIS"
       }
     }
   },
@@ -116,7 +132,7 @@
         "href": "#",
         "noFollow": true,
         "tagTitle": "More",
-        "text": "More"
+        "text": "SMEG BY DOLCE & GABBANA"
       }
     },
     "blocks": [
@@ -133,8 +149,7 @@
   },
   "flex-layout.row#menu-more": {
     "children": [
-      "flex-layout.col#menu-more-1",
-      "flex-layout.col#menu-more-2"
+      "flex-layout.col#menu-more-1"
     ]
   },
   "flex-layout.col#menu-more-1": {
@@ -142,11 +157,7 @@
       "vtex.menu@2.x:menu#more"
     ]
   },
-  "flex-layout.col#menu-more-2": {
-    "children": [
-      "info-card#home"
-    ]
-  },
+
   "vtex.menu@2.x:menu#more": {
     "props": {
       "orientation": "vertical"

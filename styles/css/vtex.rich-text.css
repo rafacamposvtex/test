@@ -27,11 +27,11 @@
 }
 
 .container--question .paragraph {
-  text-align: center;
+  text-align: left;
   max-width: 540px;
   margin: 0 16px;
   padding-top: 120px;
-  color: #03034E;
+  color: #000000;
 }
 
 .container--question .strong {
@@ -87,4 +87,40 @@
   .container--title .paragraph {
     line-height: 1.3em;
   }
+  .container--question-one {
+    justify-content: center;
+  }
+  
+  .container--question-one .paragraph {
+    text-align: left;
+    max-width: 540px;
+    margin: 0 16px;
+    padding-top: 120px;
+    color: #000000;
+  }
+  
+  .container--question-one .strong {
+    font-size: 32px;
+    line-height: 2rem;
+    font-weight: 700;
+  }
+
+  .container--question-two {
+    justify-content: center;
+  }
+  
+  .container--question-one .paragraph {
+    text-align: left;
+    max-width: 540px;
+    margin: 0 16px;
+    padding-top: 120px;
+    color: #000000;
+  }
+  
+  .container--question-one .strong {
+    font-size: 32px;
+    line-height: 2rem;
+    font-weight: 700;
+  }
+
 }

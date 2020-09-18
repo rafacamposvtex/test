@@ -1,17 +1,19 @@
 {
   "store.home": {
     "blocks": [
-      "list-context.image-list#demo",
+      "list-context.image-list#first-banner",
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
       "__fold__.experimentalLazyAssets",
-      "flex-layout.row#deals",
-      "rich-text#shelf-title",
-      "flex-layout.row#shelf",
-      "info-card#home",
-      "rich-text#question",
-      "rich-text#link",
-      "newsletter"
+      "list-context.image-list#second-banner",
+      "__fold__.experimentalLazyAssets",
+      "list-context.image-list#third-banner",
+      "__fold__.experimentalLazyAssets",
+      "list-context.image-list#fourth-banner",
+      "__fold__.experimentalLazyAssets",
+      "list-context.image-list#fifth-banner",
+      "__fold__.experimentalLazyAssets",
+      "flex-layout.row#benefits"
     ]
   },
 
@@ -19,23 +21,23 @@
     "blocks": ["product-summary.shelf"]
   },
 
-  "list-context.image-list#demo": {
-    "children": ["slider-layout#demo-images"],
+  "list-context.image-list#first-banner": {
+    "children": ["slider-layout#first-images"],
     "props": {
-      "height": 720,
+      "height": 620,
       "images": [
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+          "image": "https://vtexdemoemea.vtexassets.com/arquivos/first-banner.jpg",
+          "mobileImage": "https://vtexdemoemea.vtexassets.com/arquivos/first-banner.jpg"
         },
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner.jpg",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+          "image": "https://vtexdemoemea.vtexassets.com/arquivos/first-banner.jpg",
+          "mobileImage": "https://vtexdemoemea.vtexassets.com/arquivos/first-banner.jpg"
         }
       ]
     }
   },
-  "slider-layout#demo-images": {
+  "slider-layout#first-images": {
     "props": {
       "itemsPerPage": {
         "desktop": 1,
@@ -43,65 +45,161 @@
         "phone": 1
       },
       "infinite": true,
-      "showNavigationArrows": "desktopOnly",
       "blockClass": "carousel"
     }
   },
 
-  "rich-text#shelf-title": {
+  "list-context.image-list#second-banner": {
+    "children": ["slider-layout#second-images"],
     "props": {
-      "text": "## Summer",
-      "blockClass": "shelfTitle"
+      "height": 720,
+      "images": [
+        {
+          "image": "https://vtexdemoemea.vtexassets.com/arquivos/second-banner.jpg",
+          "mobileImage": "https://vtexdemoemea.vtexassets.com/arquivos/second-banner.jpg"
+        },
+        {
+          "image": "https://vtexdemoemea.vtexassets.com/arquivos/second-banner.jpg",
+          "mobileImage": "https://vtexdemoemea.vtexassets.com/arquivos/second-banner.jpg"
+        }
+      ]
     }
   },
-  "flex-layout.row#shelf": {
-    "children": ["list-context.product-list#demo1"]
-  },
-  "list-context.product-list#demo1": {
-    "blocks": ["product-summary.shelf"],
-    "children": ["slider-layout#demo-products"],
-    "props": {
-      "orderBy": "OrderByTopSaleDESC"
-    }
-  },
-  "slider-layout#demo-products": {
+  "slider-layout#second-images": {
     "props": {
       "itemsPerPage": {
-        "desktop": 5,
-        "tablet": 3,
+        "desktop": 1,
+        "tablet": 1,
         "phone": 1
       },
       "infinite": true,
-      "fullWidth": false,
-      "blockClass": "shelf"
+      "blockClass": "carousel"
     }
   },
 
-  "info-card#home": {
+  "list-context.image-list#third-banner": {
+    "children": ["slider-layout#third-images"],
     "props": {
-      "id": "info-card-home",
-      "isFullModeStyle": false,
-      "textPosition": "left",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
-      "headline": "Clearance Sale",
-      "callToActionText": "DISCOVER",
-      "callToActionUrl": "/sale/d",
-      "blockClass": "info-card-home",
-      "textAlignment": "center"
+      "height": 720,
+      "images": [
+        {
+          "image": "https://vtexdemoemea.vtexassets.com/arquivos/third-banner.jpg",
+          "mobileImage": "https://vtexdemoemea.vtexassets.com/arquivos/third-banner.jpg"
+        },
+        {
+          "image": "https://vtexdemoemea.vtexassets.com/arquivos/third-banner.jpg",
+          "mobileImage": "https://vtexdemoemea.vtexassets.com/arquivos/third-banner.jpg"
+        }
+      ]
+    }
+  },
+  "slider-layout#third-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "blockClass": "carousel"
     }
   },
 
-  "rich-text#question": {
+  "list-context.image-list#fourth-banner": {
+    "children": ["slider-layout#fourth-images"],
     "props": {
-      "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
+      "height": 720,
+      "images": [
+        {
+          "image": "https://vtexdemoemea.vtexassets.com/arquivos/fourth-banner.jpg",
+          "mobileImage": "https://vtexdemoemea.vtexassets.com/arquivos/fourth-banner.jpg "
+        },
+        {
+          "image": "https://vtexdemoemea.vtexassets.com/arquivos/fourth-banner.jpg",
+          "mobileImage": "https://vtexdemoemea.vtexassets.com/arquivos/fourth-banner.jpg"
+        }
+      ]
+    }
+  },
+  "slider-layout#fourth-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "blockClass": "carousel"
+    }
+  },
+
+  "slider-layout#fifth-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "blockClass": "carousel"
+    }
+  },
+  "list-context.image-list#fifth-banner": {
+    "children": ["slider-layout#fifth-images"],
+    "props": {
+      "height": 720,
+      "images": [
+        {
+          "image": "https://vtexdemoemea.vtexassets.com/arquivos/first-banner.jpg",
+          "mobileImage": "https://vtexdemoemea.vtexassets.com/arquivos/first-banner.jpg"
+        },
+        {
+          "image": "https://vtexdemoemea.vtexassets.com/arquivos/first-banner.jpg",
+          "mobileImage": "https://vtexdemoemea.vtexassets.com/arquivos/first-banner.jpg"
+        }
+      ]
+    }
+  },
+
+  "flex-layout.row#benefits": {
+    "props": {
+      "colGap": 7,
+      "rowGap": 7,
+      "marginTop": 4,
+      "marginBottom": 7,
+      "paddingTop": 7,
+      "paddingBottom": 7
+    },
+    "children": ["flex-layout.col#left", "flex-layout.col#right"]
+  },
+
+  "flex-layout.col#left": {
+    "children": ["rich-text#question-one"],
+    "props": {
+      "width": "60%",
+      "rowGap": 0
+    }
+  },
+
+  "flex-layout.col#right": {
+    "children": ["rich-text#question-two"],
+    "props": {
+      "width": "60%",
+      "rowGap": 0
+    }
+  },
+
+  "rich-text#question-one": {
+    "props": {
+      "text": "ENTREGAS E INSTALAÇÃO GRATUITAS\nEntregas gratuitas em todo o país.\nInstalação gratuita para os Grandes Eletrodomésticos, excepto para Complementos e Acessórios, em todo o país excepto nos Açores e Madeira.\nSaiba mais",
       "blockClass": "question"
     }
   },
-
-  "rich-text#link": {
+ 
+  "rich-text#question-two": {
     "props": {
-      "text": "\n**Reach us at**\nwww.vtex.com.br",
-      "blockClass": "link"
+      "text": "DEVOLUÇÕES GRATUITAS\nTem 14 dias para proceder à devolução da sua encomenda.\nOs produtos devem encontrar-se nas embalagens originais acompanhados de todos os acessórios, manuais de instruções e sem quaisquer sinais de uso.\nSaiba mais",
+      "blockClass": "question"
     }
   }
 }

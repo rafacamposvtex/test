@@ -29,7 +29,7 @@
   },
   "notification.bar#home": {
     "props": {
-      "content": "SELECTED ITEMS ON SALE! CHECK IT OUT!"
+      "content": "This is a simple demo for Smeg"
     }
   },
   "flex-layout.row#3-desktop": {
@@ -41,9 +41,15 @@
       "fullWidth": true
     },
     "children": [
-      "vtex.menu@2.x:menu#websites",
       "flex-layout.col#spacer",
-      "vtex.menu@2.x:menu#institutional"
+      "flex-layout.col#spacer",
+      "flex-layout.col#spacer",
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#spacer",
+      "flex-layout.col#logo-search",
+      "flex-layout.col#logo-wish",
+      "flex-layout.col#logo-login",
+      "flex-layout.col#logo-cart"
     ]
   },
   "flex-layout.col#spacer": {
@@ -67,21 +73,52 @@
       "fullWidth": true
     },
     "children": [
-      "flex-layout.col#logo-desktop",
-      "flex-layout.col#category-menu",
       "flex-layout.col#spacer",
-      "search-bar",
-      "locale-switcher",
-      "login",
-      "minicart.v2"
+      "flex-layout.col#category-menu",
+      "flex-layout.col#spacer"
     ]
   },
   "flex-layout.col#logo-desktop": {
     "props": {
+      "horizontalAlign": "center",
       "verticalAlign": "middle"
     },
     "children": ["logo#desktop"]
   },
+
+  "flex-layout.col#logo-search": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "middle"
+    },
+    "children": ["logo#search"]
+  },
+
+  "flex-layout.col#logo-wish": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "middle"
+    },
+    "children": ["logo#wish"]
+  },
+
+  "flex-layout.col#logo-login": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "middle"
+    },
+    "children": ["logo#login"]
+  },
+
+  "flex-layout.col#logo-cart": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "middle"
+    },
+    "children": ["logo#cart"]
+  },
+
+
   "flex-layout.col#category-menu": {
     "props": {
       "verticalAlign": "middle"
@@ -92,10 +129,48 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png",
+      "url": "https://vtexdemoemea.vtexassets.com/arquivos/smeg-logo.png",
       "width": "180"
     }
   },
+
+  "logo#search": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://vtexdemoemea.myvtex.com/arquivos/search-icon.png",
+      "width": "30"
+    }
+  },
+
+  "logo#wish": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://vtexdemoemea.vteximg.com.br/arquivos/wishlist-icon.png",
+      "width": "30"
+    }
+  },
+
+  "logo#login": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://vtexdemoemea.vteximg.com.br/arquivos/login-icon.png",
+      "width": "30"
+    }
+  },
+
+  "logo#cart": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://vtexdemoemea.vteximg.com.br/arquivos/cart-icon.png",
+      "width": "30"
+    }
+  },
+
+  
   "header-layout.mobile": {
     "children": ["sticky-layout#1-mobile"]
   },
@@ -136,7 +211,7 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo-mobile.png",
+      "url": "https://vtexdemoemea.vtexassets.com/arquivos/smeg-logo.png",
       "width": "70"
     }
   }
